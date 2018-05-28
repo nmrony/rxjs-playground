@@ -1,7 +1,7 @@
 {
   "name": "rxjs-6-playground",
   "version": "1.0.0",
-  "description": "",
+  "description": "RxJS 6 Playground",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
