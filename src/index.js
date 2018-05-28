@@ -1,8 +1,8 @@
 /*
  // creation
- import "./creation/hello-world.js";
+ import './creation/eventStream';
  */
-import './creation/eventStream';
+import './creation/hello-world';
 
 /*
  // operators

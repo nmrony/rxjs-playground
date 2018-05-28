@@ -1,12 +1,17 @@
 import { Observable } from 'rxjs';
 
+const app = document.querySelector('#app');
 const hello = Observable.create(observer => {
-  observer.next('hello');
-  observer.next('World');
+  observer.next('Hello');
+  observer.next(' RxJS');
+  observer.next('!!');
 });
 
 // subscription
-const subscription = hello.subscribe(console.log);
+const subscription = hello.subscribe(value => {
+  const prev = app.innerHTML;
+  app.innerHTML = prev + value;
+});
 
 // clear subscription
 setTimeout(() => {
